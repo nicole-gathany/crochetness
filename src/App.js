@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import UserView from "./components/UserView";
 import AdminView from "./components/AdminView";

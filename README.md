@@ -1,3 +1,15 @@
+# eCommerce App for Crochetness
+
+I am creating an eCommerce App for a teenage entrepreneur who crochets outfits (mainly dresses). I love her work because it's a modern take on a very old-school concept, so I offered to create a website for her. 
+
+## User View
+Shows pictures and users can favorite and click to order and put into the their cart!
+
+## Admin View
+I want Jaclyn to be able to upload her new work!
+
+## General React stuff I might need later
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
