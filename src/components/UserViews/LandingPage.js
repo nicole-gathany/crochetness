@@ -3,15 +3,38 @@ import AboutStore from "./AboutMyStore"
 import ProductPreview from "./ProductsPreview";
 import ContactPage from "./Contact"
 import ShopperReviews from "./ShopperReviews";
+import GreenSkirt from "../../images/green_skirt.jpg";
+import StorePage from "./Shopping/StorePage"
 
 class LandingPage extends React.Component{
+constructor(props){
+    super(props);
+    this.handleShopping=this.handleShopping.bind(this);
+    this.state = {toShopping: false}
+}
+
+handleShopping(){
+    console.log("Handle Shopping button works in theory");
+    this.setState({ toShopping: true})
+}
+
     render(){
+        const shopping = this.state.toShopping;
+        let view;
+        if(shopping===false){
+            view = [<AboutStore></AboutStore>, <ProductPreview></ProductPreview>,  <ContactPage></ContactPage>, <ShopperReviews></ShopperReviews>]
+         
+        } else if(shopping===true){
+            view = <StorePage></StorePage>
+        }
+
         return <div>
             <h1>This is the landing page</h1>
-          <AboutStore></AboutStore>
-          <ProductPreview></ProductPreview>
-          <ContactPage></ContactPage>
-          <ShopperReviews></ShopperReviews>
+            <button onClick={this.handleShopping}>shopping</button>
+            <img src={GreenSkirt}></img>
+             
+          {view}
+         
         </div>
     }
 }
