@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.about-store{
+  background-image: url(./images/blue_sweater.jpeg);
+  height: 500px;
+  color: blue;
+}
+
+.landing-page{
+  background-image: url(./images/green_skirt.jpg);
+  height: 500px;
+  /* width: 500px; */
+}

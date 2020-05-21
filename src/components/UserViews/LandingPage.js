@@ -28,10 +28,10 @@ handleShopping(){
             view = <StorePage></StorePage>
         }
 
-        return <div>
-            <h1>This is the landing page</h1>
+        return <div className="landing-page">
+            <h1>Crochet-ness</h1>
             <button onClick={this.handleShopping}>shopping</button>
-            <img src={GreenSkirt}></img>
+           
              
           {view}
          
