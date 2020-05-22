@@ -22,5 +22,7 @@ code {
 .landing-page{
   background-image: url(./images/green_skirt.jpg);
   height: 500px;
+
   /* width: 500px; */
+  margin-bottom: auto;
 }

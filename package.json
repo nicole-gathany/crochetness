@@ -30,22 +30,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "description": "I am creating an eCommerce App for a teenage entrepreneur who crochets outfits (mainly dresses). I love her work because it's a modern take on a very old-school concept, so I offered to create a website for her.",
-  "main": "index.js",
-  "devDependencies": {
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "parcel-bundler": "^1.12.4"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nicole-gathany/crochetness.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/nicole-gathany/crochetness/issues"
-  },
-  "homepage": "https://github.com/nicole-gathany/crochetness#readme"
+
+  }
 }
