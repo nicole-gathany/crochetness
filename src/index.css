@@ -13,21 +13,19 @@ code {
 }
 
 
-.about-store{
-  background-image: url(./images/blue_sweater.jpeg);
-  height: 500px;
-  color: blue;
-  margin-bottom: 500px;
-  margin-top: 500px;
-}
-
-
 .landing-page{
   /*how do we slide up the picture so that the skirt is showing and not the tanktop?*/
-  background-image: url(./images/green_skirt.jpg);
-  height: 500px;
+  background-image: url(./images/landing_pages/3.png);
+  height: 650px;
 
   /* width: 500px; */
-  margin-bottom: 200px;
-  margin-top: 200px;
+
 }
+.about-store{
+  background-image: url(./images/landing_pages/4.png);
+  height: 650px;
+  color: blue;
+  margin-bottom: 600px;
+  margin-top: 600px;
+}
+
