@@ -16,13 +16,13 @@ class StorePage extends React.Component{
     constructor(props){
         super(props);
         this.products = [
-            {outfit: "blue sweater", outfit_type: "sweater", source: {BlueSweater}, main_color: "blue", description: "great, big blue sweater for the winter"},
-            {outfit: "black dress", outfit_type: "dress", source: {BlackDress}, main_color: "black", description: "great dress for coachella (or coachella inside rn)"},
-            {outfit: "green and black two piece", outfit_type: "two piece", source: {GreenBlack}, main_color: ["green", "black"], description: "two piece for fun"},
-            {outfit: "pink and blue two piece", outfit_type: "two piece", source: {PinkBlue}, main_color: "blue", description: "great, big blue sweater for the winter"},
-            {outfit: "green skirt", outfit_type: "skirt", source: {GreenSkirt}, main_color: "green skirt", description: "green skirt"},
-            {outfit: "red dress", outfit_type: "dress", source: {RedDress}, main_color: "red", description: "nice red dress for your next #norushchallenge or whatever tiktok challenge you do"},
-            {outfit: "magenta dress", outfit_type: "dress", source: {MagentaDress}, main_color: "magenta", description: "magenta dress so you can do the lord's werk"}
+            {outfit: "blue sweater", outfit_type: "sweater", source: BlueSweater, main_color: "blue", description: "great, big blue sweater for the winter"},
+            {outfit: "black dress", outfit_type: "dress", source: BlackDress, main_color: "black", description: "great dress for coachella (or coachella inside rn)"},
+            {outfit: "green and black two piece", outfit_type: "two piece", source: GreenBlack, main_color: ["green", "black"], description: "two piece for fun"},
+            {outfit: "pink and blue two piece", outfit_type: "two piece", source: PinkBlue, main_color: "blue", description: "great, big blue sweater for the winter"},
+            {outfit: "green skirt", outfit_type: "skirt", source: GreenSkirt, main_color: "green skirt", description: "green skirt"},
+            {outfit: "red dress", outfit_type: "dress", source: RedDress, main_color: "red", description: "nice red dress for your next #norushchallenge or whatever tiktok challenge you do"},
+            {outfit: "magenta dress", outfit_type: "dress", source: MagentaDress, main_color: "magenta", description: "magenta dress so you can do the lord's werk"}
         ]
     }
 
@@ -30,14 +30,7 @@ render(){
     return <div className="store-page"> 
     <h1>this is the store page</h1>
         <div className="grid-container">
-              
-        <img src={BlackDress} className="grid-item"></img>
-        <img src={BlueSweater} className="grid-item"></img>
-        <img src={GreenBlack} className="grid-item"></img>
-        <img src={GreenSkirt} className="grid-item"></img>
-        <img src={MagentaDress} className="grid-item"></img>
-        <img src={PinkBlue} className="grid-item"></img>
-        <img src={RedDress} className="grid-item"></img>
+              {this.products.map(product=> (<img src={product.source} className="grid-item"></img>))}
         </div>
      
     </div>
