@@ -43,6 +43,9 @@ code {
 .grid-item{
   width: 200px;
   height: 300px;
-  padding: 100px;
-
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 100px;
+  margin-left: 100px;
 }
