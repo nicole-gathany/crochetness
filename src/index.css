@@ -49,3 +49,7 @@ code {
   margin-bottom: 100px;
   margin-left: 100px;
 }
+
+.favorite-button{
+  color: red;
+}

@@ -11,6 +11,8 @@ import RedDress from "../../../images/red.jpg";
 import MagentaDress from "../../../images/magenta_dress.jpeg";
 import ReactDom from "react-dom";
 
+import ProductPage from "./ProductPage"
+
 //i think this is what i want in my storage array
 //[{outfit: "blue sweater", "outfit type": "sweater", "source": {BlueSweater}, "main_color": "blue, ""colors": {blue, green,}, "description": "blue ass sweater" }]
 class StorePage extends React.Component {
@@ -49,7 +51,7 @@ class StorePage extends React.Component {
         outfit: "green skirt",
         outfit_type: "skirt",
         source: GreenSkirt,
-        main_color: "green skirt",
+        main_color: "green",
         description: "green skirt"
       },
       {
@@ -68,25 +70,42 @@ class StorePage extends React.Component {
         description: "magenta dress so you can do the lord's werk"
       }
     ];
+    this.state = {isProduct: false}
+    this.toProductPage = this.toProductPage.bind(this);
+  }
+
+  toProductPage(){
+    //filter so that there is only one product
+    //and shows the product page 
+    this.setState({isProduct: true})
   }
 
   render() {
+    const isProduct = this.state.isProduct;
     const items = this.products.map(product => (
       <div>
         <div className="grid-container">
           <img src={product.source} className="grid-item"></img>
         </div>
-        <button>View this item</button>
-        <button>Add to Cart</button>
-        <button>♡</button>
+        <button onClick={this.toProductPage}>View this item</button>
+        <button onClick={this.toProductPage}>Add to Cart</button>
+        <button className="favorite-button">♡</button>
       </div>
     ));
+    let view;
+        if(isProduct===false){
+            view = items;
+        } else if(isProduct===true){
+            view = <ProductPage></ProductPage>
+        }
+
+    const oneItem = this.product
 
     return (
       <div className="store-page">
         <h1>this is the store page</h1>
 
-        {items}
+        {view}
       </div>
     );
   }
