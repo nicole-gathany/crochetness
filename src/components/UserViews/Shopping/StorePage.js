@@ -27,16 +27,19 @@ class StorePage extends React.Component{
     }
 
 render(){
-    return <div>
-
-        <h1>this is the store page</h1>
-        <img src={BlackDress}></img>
-        <img src={BlueSweater}></img>
-        <img src={GreenBlack}></img>
-        <img src={GreenSkirt}></img>
-        <img src={MagentaDress}></img>
-        <img src={PinkBlue}></img>
-        <img src={RedDress}></img>
+    return <div className="store-page"> 
+    <h1>this is the store page</h1>
+        <div className="grid-container">
+              
+        <img src={BlackDress} className="grid-item"></img>
+        <img src={BlueSweater} className="grid-item"></img>
+        <img src={GreenBlack} className="grid-item"></img>
+        <img src={GreenSkirt} className="grid-item"></img>
+        <img src={MagentaDress} className="grid-item"></img>
+        <img src={PinkBlue} className="grid-item"></img>
+        <img src={RedDress} className="grid-item"></img>
+        </div>
+     
     </div>
 }
 }

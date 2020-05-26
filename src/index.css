@@ -14,13 +14,11 @@ code {
 
 
 .landing-page{
-  /*how do we slide up the picture so that the skirt is showing and not the tanktop?*/
   background-image: url(./images/landing_pages/3.png);
-  height: 650px;
-
-  /* width: 500px; */
-
+  height: 650px; 
 }
+
+
 .about-store{
   background-image: url(./images/landing_pages/4.png);
   height: 650px;
@@ -29,3 +27,22 @@ code {
   margin-top: 600px;
 }
 
+.store-page{
+  margin-bottom: 600px;
+  margin-top: 600px;
+  margin-left: 100px;
+}
+
+
+.grid-container{
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: auto auto;
+}
+
+.grid-item{
+  width: 200px;
+  height: 300px;
+  padding: 100px;
+
+}
