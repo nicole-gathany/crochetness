@@ -82,7 +82,7 @@ class StorePage extends React.Component {
 
   render() {
     const isProduct = this.state.isProduct;
-    const items = this.products.map(product => (
+    let items = this.products.map(product => (
       <div>
         <div className="grid-container">
           <img src={product.source} className="grid-item"></img>
@@ -91,15 +91,21 @@ class StorePage extends React.Component {
         <button onClick={this.toProductPage}>Add to Cart</button>
         <button className="favorite-button">♡</button>
       </div>
-    ));
-    let view;
+     
+    )); 
+
+        //  const oneItem = items.filter((item, index)=>)
+    
+
+
+    let view=[];
         if(isProduct===false){
-            view = items;
+            view.push(items);
         } else if(isProduct===true){
-            view = <ProductPage></ProductPage>
+          view.pop()
+            view.push(<ProductPage></ProductPage>)
         }
 
-    const oneItem = this.product
 
     return (
       <div className="store-page">

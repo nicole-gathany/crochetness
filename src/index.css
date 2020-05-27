@@ -53,3 +53,7 @@ code {
 .favorite-button{
   color: red;
 }
+
+.measurement-form{
+  padding: 5px;
+}
